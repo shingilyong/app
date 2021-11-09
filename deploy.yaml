@@ -16,6 +16,6 @@ spec:
         - name: harbor-cred
       containers:
         - name: app
-          image: 3.38.46.241/test/test:jenkins-test-122
+          image: 3.38.46.241/test/test:jenkins-app-1
           ports:
             - containerPort: 80
