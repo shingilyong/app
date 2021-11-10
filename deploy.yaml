@@ -8,9 +8,9 @@ spec:
       app: app
   replicas: 2
   template:
-    annotations:    
-      consul.hashicorp.com/connect-inject: "true"  
     metadata:
+      annotations:
+        consul.hashicorp.com/connect-inject: "true"     
       labels:
         app: app
     spec:
