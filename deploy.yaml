@@ -7,8 +7,9 @@ spec:
     matchLabels:
       app: app
   replicas: 2
-  revisionHistoryLimit: 3
   template:
+    annotations:    
+      consul.hashicorp.com/connect-inject: "true"  
     metadata:
       labels:
         app: app
