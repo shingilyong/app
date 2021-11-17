@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       app: app
+  revisionHistoryLimit: 1
   replicas: 2
   template:
     metadata:
@@ -14,7 +15,6 @@ spec:
       labels:
         app: app
     spec:
-      revisionHistoryLimit: 1       
       imagePullSecrets:
         - name: harbor-cred
       containers:
