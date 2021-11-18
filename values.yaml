@@ -8,11 +8,7 @@ image:
   repository: 3.38.46.241/test/test
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-<<<<<<< HEAD
   tag: 
-=======
-  tag: "jenkins-test-173" jenkins-test-172
->>>>>>> dd2d9207428b28d61e366d30ac33387e87923b74
 
 imagePullSecrets:
 - name: harbor-cred          
