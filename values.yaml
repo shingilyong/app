@@ -7,11 +7,11 @@ replicaCount: 2
 image:
   repository: 3.38.46.241/test/test
   pullPolicy: IfNotPresent
-  # Overrides the image c	a whose default is the chart appVersion.
-  tag: "jenkins-test-172" "jenkins-test-171" 
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: jenkins-test-172
 
 imagePullSecrets:
-  - name: harbor-cred
+- name: harbor-cred          
 nameOverride: ""
 fullnameOverride: ""
 
@@ -38,8 +38,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 8080
 
 ingress:
   enabled: false
@@ -74,7 +74,7 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
-  # targetMemoryUtilizationPercenc	ae: 80
+  # targetMemoryUtilizationPercentage: 80
 
 nodeSelector: {}
 
