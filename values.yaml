@@ -6,9 +6,9 @@ replicaCount: 2
 
 image:
   repository: 3.37.156.227/test/test
+ag: "23"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "11" "10"
 revisionHistoryLimit: 1
 imagePullSecrets:
 - name: harbor-cred          
