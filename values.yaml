@@ -6,8 +6,7 @@ replicaCount: 2
 
 image:
   repository: 3.37.156.227/test/test
-  tag: "{BUILD_NUMBER}"
-ag: "30"
+  tag: ""
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
 revisionHistoryLimit: 1
