@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: 3.37.156.227/study/app
+  repository: 3.110.9.34/study/app
   tag: "4"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
